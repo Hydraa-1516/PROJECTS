@@ -1,0 +1,20 @@
+{
+  "name": "ai-workplace-simulator",
+  "version": "1.0.0",
+  "description": "AI-powered inclusive workplace scenario simulator",
+  "main": "script.js",
+  "scripts": {
+    "start": "node api/generate-scenario.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node api/generate-scenario.js",
+    "client": "live-server --port=3000"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "live-server": "^1.2.2"
+  }
+}
